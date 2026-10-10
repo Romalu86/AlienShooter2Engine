@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="exception">
+      <UniqueIdentifier>{362C779C-152A-599B-8925-6B7BE7408798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm">
+      <UniqueIdentifier>{5DFDE770-B54F-5660-A276-0868EE8C7461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Game">
+      <UniqueIdentifier>{D43FD1E4-818B-5A34-A881-2B15BC2E4DE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\IniParser">
+      <UniqueIdentifier>{3A515E13-E8C2-5B55-BE90-6B958E2F5880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Input">
+      <UniqueIdentifier>{E06437FE-8B36-549A-BB7A-61F2E30F64C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Inventory">
+      <UniqueIdentifier>{63FDD2A0-6B9D-50DA-A296-ED351A3607BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Menu">
+      <UniqueIdentifier>{CF2DBC44-10F2-5028-94D4-EA6077C66BDF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Quest">
+      <UniqueIdentifier>{4D463C5D-1C96-54AA-AE3A-14958AD500AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\RPGHero">
+      <UniqueIdentifier>{716791D0-B2EB-595B-B767-7F164CCDE32A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Survive">
+      <UniqueIdentifier>{1597426F-734C-5036-8591-BE59F05A40C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Utils">
+      <UniqueIdentifier>{BB6F4FD5-D100-50AC-9CBF-216C9F3F05AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Game\Campaign">
+      <UniqueIdentifier>{ABB02F65-5ED7-59A8-8439-FAA96E47DBAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Game\RecordDB">
+      <UniqueIdentifier>{DA52DD07-8299-569F-B168-FE2E4F0493A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Game\ScriptExec">
+      <UniqueIdentifier>{1D69669E-74AE-535A-B898-BB464A6726F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Game\Vehicles">
+      <UniqueIdentifier>{F6399640-E25D-5551-ACA5-FFEB3AF5FC19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zm\Utils\String">
+      <UniqueIdentifier>{B0A9038B-6635-5025-8D12-12BA8CC37863}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BALLOON.CPP" />
+    <ClCompile Include="..\src\BUILDING.CPP" />
+    <ClCompile Include="..\src\CANNON.CPP" />
+    <ClCompile Include="..\src\CONSTANT.CPP" />
+    <ClCompile Include="..\src\CREATURE.CPP" />
+    <ClCompile Include="..\src\DEPO.CPP" />
+    <ClCompile Include="..\src\dialog.cpp" />
+    <ClCompile Include="..\src\dialog_unit.cpp" />
+    <ClCompile Include="..\src\dialogSrv.cpp" />
+    <ClCompile Include="..\src\ENGINE.CPP" />
+    <ClCompile Include="..\src\exception\se_translator.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FRAME.CPP" />
+    <ClCompile Include="..\src\graph.cpp" />
+    <ClCompile Include="..\src\GROUPS.CPP" />
+    <ClCompile Include="..\src\INPUT.CPP" />
+    <ClCompile Include="..\src\system_font.cpp" />
+    <ClCompile Include="..\src\main_sw.cpp" />
+    <ClCompile Include="..\src\runtime\locale_tables.cpp" />
+    <ClCompile Include="..\src\runtime\locale_strings.cpp" />
+    <ClCompile Include="..\src\man.cpp" />
+    <ClCompile Include="..\src\MAP.CPP" />
+    <ClCompile Include="..\src\map_steam.cpp" />
+    <ClCompile Include="..\src\MENU.CPP" />
+    <ClCompile Include="..\src\MESSAGE.CPP" />
+    <ClCompile Include="..\src\MOUSE.CPP" />
+    <ClCompile Include="..\src\mousetips.cpp" />
+    <ClCompile Include="..\src\MYERROR.CPP" />
+    <ClCompile Include="..\src\MYLIB.CPP" />
+    <ClCompile Include="..\src\NET.CPP" />
+    <ClCompile Include="..\src\PLANE.CPP" />
+    <ClCompile Include="..\src\PLAYER.CPP" />
+    <ClCompile Include="..\src\player_arcade.cpp" />
+    <ClCompile Include="..\src\RAIL.CPP" />
+    <ClCompile Include="..\src\RAILWAY.CPP" />
+    <ClCompile Include="..\src\REGION.CPP" />
+    <ClCompile Include="..\src\REGISTRY.CPP" />
+    <ClCompile Include="..\src\RESREAD.CPP" />
+    <ClCompile Include="..\src\ROBOT.CPP" />
+    <ClCompile Include="..\src\SCRIPT.CPP" />
+    <ClCompile Include="..\src\script_exec.cpp" />
+    <ClCompile Include="..\src\SFX.CPP" />
+    <ClCompile Include="..\src\SOUND.CPP" />
+    <ClCompile Include="..\src\SPRITE.CPP" />
+    <ClCompile Include="..\src\sprite_collector.cpp" />
+    <ClCompile Include="..\src\sprite_list.cpp" />
+    <ClCompile Include="..\src\TERRAIN.CPP" />
+    <ClCompile Include="..\src\texture.cpp" />
+    <ClCompile Include="..\src\UNIT.CPP" />
+    <ClCompile Include="..\src\VID.CPP" />
+    <ClCompile Include="..\src\zm\Game\Campaign\zCampaign.cpp">
+      <Filter>zm\Game\Campaign</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\RecordDB\zRecordDB.cpp">
+      <Filter>zm\Game\RecordDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\ScriptExec\zScriptExec.cpp">
+      <Filter>zm\Game\ScriptExec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\Vehicles\zCarControl.cpp">
+      <Filter>zm\Game\Vehicles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\zGroundItem.cpp">
+      <Filter>zm\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\zItemTaker.cpp">
+      <Filter>zm\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Game\zVidCopier.cpp">
+      <Filter>zm\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\IniParser\zIniParser.cpp">
+      <Filter>zm\IniParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\IniParser\zItemInfo.cpp">
+      <Filter>zm\IniParser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Input\zInputMap.cpp">
+      <Filter>zm\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Inventory\zInventory.cpp">
+      <Filter>zm\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Inventory\zInventory2D.cpp">
+      <Filter>zm\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Inventory\zInventory3D.cpp">
+      <Filter>zm\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Inventory\zInventoryItem.cpp">
+      <Filter>zm\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Inventory\zInvServer.cpp">
+      <Filter>zm\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zBaseDlgMenu.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zBriefingDlgMenu.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zHeroInvMenu.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zParamDlgMenu.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zShopDlgMenu.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zShopItemInfo.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Menu\zSpriteInventory.cpp">
+      <Filter>zm\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Quest\zQuestServer.cpp">
+      <Filter>zm\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGAmmo.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGArmor.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGBaseObject.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGBaseObject_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGEquip.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGFrameWork.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGHero.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGHero_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGHeroBase.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGHeroBase_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGImplant.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGImplant_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGParamDialog.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGQuest.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGQuest_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGWeapon.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\RPGHero\zRPGWeapon_loadsave.cpp">
+      <Filter>zm\RPGHero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Survive\zSurvive.cpp">
+      <Filter>zm\Survive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Utils\String\zString.cpp">
+      <Filter>zm\Utils\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Utils\zLogConsole.cpp">
+      <Filter>zm\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Utils\zRefObject.cpp">
+      <Filter>zm\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\Utils\zUtils.cpp">
+      <Filter>zm\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zm\zDebug.cpp">
+      <Filter>zm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\libogg\src\bitwise.c" />
+    <ClCompile Include="..\third_party\libogg\src\framing.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\block.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\codebook.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\floor0.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\floor1.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\info.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\mapping0.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\mdct.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\psy.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\res0.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\xiph_registry.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\smallft.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\synthesis.c" />
+    <ClCompile Include="..\third_party\libvorbis\lib\vorbisfile.c" />
+    <ClCompile Include="..\src\zm\Eng\zProfLdr\zProfLdr.cpp" />
+    <ClCompile Include="..\src\zm\Eng\zProfLdr\zProfMngr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\zm\Game\RecordDB\RecordDBStreambufControl.h" />
+    <ClInclude Include="..\src\basetype.h" />
+    <ClInclude Include="..\src\zm\Utils\zStaticStorage.h" />
+    <ClInclude Include="..\src\zm\Utils\zVectorOperations.h" />
+    <ClInclude Include="..\src\zm\Utils\zTreeOperations.h" />
+    <ClInclude Include="..\src\engine_globals.h" />
+    <ClInclude Include="..\src\runtime\win32_callbacks.h" />
+    <ClInclude Include="..\src\runtime\crt_locale.h" />
+    <ClInclude Include="..\src\runtime\locale_facets.h" />
+    <ClInclude Include="..\src\runtime\locale_tables.h" />
+    <ClInclude Include="..\src\runtime\locale_operations.h" />
+    <ClInclude Include="..\src\runtime\locale_strings.h" />
+    <ClInclude Include="..\src\runtime\locale_state.h" />
+    <ClInclude Include="..\src\constant.h" />
+    <ClInclude Include="..\src\dialogSrv.h" />
+    <ClInclude Include="..\src\exception\se_translator.h" />
+    <ClInclude Include="..\src\engine.h" />
+    <ClInclude Include="..\src\frame.h" />
+    <ClInclude Include="..\src\system_font.h" />
+    <ClInclude Include="..\src\graph.h" />
+    <ClInclude Include="..\src\groups.h" />
+    <ClInclude Include="..\src\input.h" />
+    <ClInclude Include="..\src\map.h" />
+    <ClInclude Include="..\src\menu.h" />
+    <ClInclude Include="..\src\message.h" />
+    <ClInclude Include="..\src\man.h" />
+    <ClInclude Include="..\src\iman.h" />
+    <ClInclude Include="..\src\irpg.h" />
+    <ClInclude Include="..\src\mouse.h" />
+    <ClInclude Include="..\src\mousetips.h" />
+    <ClInclude Include="..\src\mylib.h" />
+    <ClInclude Include="..\src\net.h" />
+    <ClInclude Include="..\src\legacy_d3dx_effect.h" />
+    <ClInclude Include="..\src\player.h" />
+    <ClInclude Include="..\src\player_arcade.h" />
+    <ClInclude Include="..\src\creature.h" />
+    <ClInclude Include="..\src\depo.h" />
+    <ClInclude Include="..\src\robot.h" />
+    <ClInclude Include="..\src\rail.h" />
+    <ClInclude Include="..\src\railway.h" />
+    <ClInclude Include="..\src\region.h" />
+    <ClInclude Include="..\src\registry.h" />
+    <ClInclude Include="..\src\resread.h" />
+    <ClInclude Include="..\src\script.h" />
+    <ClInclude Include="..\src\sfx.h" />
+    <ClInclude Include="..\src\sound.h" />
+    <ClInclude Include="..\src\sprite.h" />
+    <ClInclude Include="..\src\sprite_collector.h" />
+    <ClInclude Include="..\src\unit.h" />
+    <ClInclude Include="..\src\vid.h" />
+    <ClInclude Include="..\src\zm\Game\Campaign\zCampaign.h">
+      <Filter>zm\Game\Campaign</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Game\ScriptExec\zScriptExec.h">
+      <Filter>zm\Game\ScriptExec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Game\zItemTaker.h">
+      <Filter>zm\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\IniParser\zIniParser.h">
+      <Filter>zm\IniParser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Inventory\zInventory.h">
+      <Filter>zm\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Inventory\zInventory2D.h">
+      <Filter>zm\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Inventory\zInventoryItem.h">
+      <Filter>zm\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Inventory\zInvServer.h">
+      <Filter>zm\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Menu\zBaseDlgMenu.h">
+      <Filter>zm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Menu\zHeroInvMenu.h">
+      <Filter>zm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Menu\zShopDlgMenu.h">
+      <Filter>zm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Menu\zShopItemInfo.h">
+      <Filter>zm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Menu\zSpriteInventory.h">
+      <Filter>zm\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Quest\zQuestServer.h">
+      <Filter>zm\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\iRPGBaseObjectConst.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGAmmo.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGArmor.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGBaseObject.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGEquip.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGFrameWork.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGHero.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGHeroBase.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGImplant.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGParamDialog.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGQuest.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\RPGHero\zRPGWeapon.h">
+      <Filter>zm\RPGHero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Survive\zSurvive.h">
+      <Filter>zm\Survive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Utils\String\zString.h">
+      <Filter>zm\Utils\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\zm\Eng\zProfLdr\zProfLdr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\resources\AlienShooter_GameResources.res" />
+  </ItemGroup>
+</Project>

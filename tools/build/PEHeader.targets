@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- Set the PE32 OS and Windows subsystem versions to 4.0 after linking. -->
+  <UsingTask TaskName="AS2SetPEHeaderVersions"
+             TaskFactory="CodeTaskFactory"
+             AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <Executable ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System" />
+      <Using Namespace="System.IO" />
+      <Code Type="Fragment" Language="cs"><![CDATA[
+        byte[] data = File.ReadAllBytes(Executable);
+        if (data.Length < 64 || data[0] != 0x4D || data[1] != 0x5A) {
+            Log.LogError("PE header: expected a DOS/PE executable.");
+            return false;
+        }
+        int pe = BitConverter.ToInt32(data, 60);
+        if (pe < 64 || pe > data.Length - 248 ||
+            BitConverter.ToUInt32(data, pe) != 0x00004550u ||
+            BitConverter.ToUInt16(data, pe + 4) != 0x014Cu ||
+            BitConverter.ToUInt16(data, pe + 20) < 224 ||
+            BitConverter.ToUInt16(data, pe + 24) != 0x010Bu ||
+            BitConverter.ToUInt16(data, pe + 24 + 68) != 2) {
+            Log.LogError("PE header: expected an i386 PE32 Windows image.");
+            return false;
+        }
+        int optional = pe + 24;
+        if (BitConverter.ToUInt32(data, optional + 128) != 0 ||
+            BitConverter.ToUInt32(data, optional + 132) != 0) {
+            Log.LogError("PE header: finalize the header before signing the image.");
+            return false;
+        }
+        int[] offsets = { optional + 40, optional + 42, optional + 48, optional + 50 };
+        ushort[] values = { 4, 0, 4, 0 };
+        bool changed = false;
+        using (FileStream output = File.Open(Executable, FileMode.Open, FileAccess.Write, FileShare.Read)) {
+            for (int i = 0; i < offsets.Length; ++i) {
+                if (BitConverter.ToUInt16(data, offsets[i]) == values[i]) continue;
+                byte[] word = BitConverter.GetBytes(values[i]);
+                output.Position = offsets[i];
+                output.Write(word, 0, word.Length);
+                changed = true;
+            }
+        }
+        Log.LogMessage(Microsoft.Build.Framework.MessageImportance.High,
+            "PE header: OS 4.0, Windows subsystem 4.0 ({0}).",
+            changed ? "updated" : "already set");
+        return true;
+      ]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="AS2FinalizePEHeaderVersions" AfterTargets="Link"
+          Condition="'$(ConfigurationType)' == 'Application' and '$(Platform)' == 'Win32' and Exists('$(TargetPath)')">
+    <AS2SetPEHeaderVersions Executable="$(TargetPath)" />
+  </Target>
+</Project>
