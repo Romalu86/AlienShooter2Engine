@@ -23,23 +23,6 @@ Open `AlienShooter.sln` in Visual Studio 2022, select the required configuration
 | Gold | `Release` | `Debug` |
 | Vengeance | `Release Vengeance` | `Debug Vengeance` |
 
-You can also build from a command prompt in the repository directory:
-
-```bat
-BUILD.bat Release Gold
-BUILD.bat Release Vengeance
-```
-
-Replace `Release` with `Debug` for a debug build. Running `BUILD.bat` without arguments builds **Release Gold**. The direct configuration names, such as `BUILD.bat ReleaseVengeance`, are also accepted.
-
-The generated files are:
-
-- Executable and symbols: `build\vs2022\<Configuration>\AlienShooter.exe`, `.pdb` and `.map`.
-- Intermediate files: `build\vs2022\obj\<Configuration>\`.
-- Command-line build log: `build\vs2022\build-<Configuration>.log`.
-
-The configurations use separate output directories. Setting `AS2_BUILD_ROOT` before running `BUILD.bat` replaces the `build\vs2022` directory with that path.
-
 ## Running
 
 Place the built `AlienShooter.exe` in the matching game's installation directory and run it with that directory as its working directory. Keep a backup of the original executable.
